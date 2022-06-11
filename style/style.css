@@ -112,6 +112,15 @@ input {
 }
 
 /* =========== LAYOUT ======== */
+.container{
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid{
+  display: grid; 
+}
 
 /* =========== REUSABLE CSS CLASSES ======== */
 
@@ -208,7 +217,21 @@ input {
 }
 
 /* =========== Home Section ======== */
+.home{
+  background: url(../assets/Curriculo\ Desenvolvedor\ Junior\ .png);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
 
+.home_container{
+  position: relative;
+  height: 100%;
+  align-items: center;
+}
+.home_img{
+  display: none;
+}
 /* =========== Buttons ======== */
 
 /* =========== About Section ======== */

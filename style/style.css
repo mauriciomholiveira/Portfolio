@@ -112,14 +112,14 @@ input {
 }
 
 /* =========== LAYOUT ======== */
-.container{
+.container {
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.grid{
-  display: grid; 
+.grid {
+  display: grid;
 }
 
 /* =========== REUSABLE CSS CLASSES ======== */
@@ -180,8 +180,7 @@ input {
   transition: 0.4s;
 }
 
-
-.btn_share{
+.btn_share {
   position: absolute;
   bottom: var(--bottom-1-8);
   left: 0;
@@ -189,7 +188,7 @@ input {
   text-align: center;
 }
 
-.social_share{
+.social_share {
   font-size: 1.5rem;
 }
 /* Active Link */
@@ -212,28 +211,122 @@ input {
   margin: auto;
 }
 /* =========== MAIN ======== */
-.main{
+.main {
   margin-left: 100px;
 }
 
 /* =========== Home Section ======== */
-.home{
-  background: url(../assets/Curriculo\ Desenvolvedor\ Junior\ .png);
+.home {
+  background: url(../assets/backgroud-alt.png);
   background-size: cover;
   background-position: center center;
   height: 100vh;
 }
 
-.home_container{
+.home_container {
   position: relative;
   height: 100%;
   align-items: center;
 }
-.home_img{
+
+.home_social {
+  position: absolute;
+  top: 1.8rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 3.5rem;
+}
+
+.home_social-follow {
+  font-weight: var(--font-medium);
+  position: relative;
+}
+.home_social-follow::after {
+  content: '';
+  position: absolute;
+  width: 1rem;
+  height: 2px;
+  background-color: var(--text-color);
+  right: -45%;
+  top: 50%;
+}
+.home_social-links {
+  display: inline-flex;
+  column-gap: 1rem;
+}
+
+.home_social-link {
+  font-size: 1.08rem;
+  color: var(--text-color);
+  transition: 0.4s;
+}
+.home_social-link:hover {
+  transform: translateY(0.25rem);
+}
+.home_img {
   display: none;
 }
+
+.home_title {
+  font-size: var(--bigest-font-size);
+}
+.home_subtitle {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-75);
+}
+
+.home_description {
+  max-width: 450px;
+  margin-bottom: var(--mb-2);
+}
+.my_info {
+  display: flex;
+  column-gap: 1.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 1.8rem;
+}
+
+.info_item {
+  display: flex;
+  align-items: center;
+}
+
+.info_title,
+.info_subtitle {
+  font-size: var(--small-font-size);
+}
+
+.info_title {
+  font-weight: var(--font-medium);
+}
+
+.info_icon {
+  font-size: 1.8rem;
+  color: var(--skin-color);
+  margin-right: var(--mb-0-75);
+  margin-left: 1rem;
+}
+
 /* =========== Buttons ======== */
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: var(--skin-color);
+  color: var(--text-color);
+}
 
 /* =========== About Section ======== */
+
+/* =========== Qualification Section ======== */
+
+/* =========== Skills Section ======== */
+
+/* =========== Work Section ======== */
+
+/*  Active Item Work */
 
 /* =========== About Section ======== */

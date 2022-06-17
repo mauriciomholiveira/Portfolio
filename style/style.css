@@ -514,6 +514,19 @@ input {
   margin-left: auto;
 }
 
+.skills_active .skills_arrow {
+  transform: rotate(-90deg);
+  transition: 0.3s;
+}
+
+.skills [data-content] {
+  display: none;
+}
+
+.skills_active[data-content] {
+  display: block;
+}
+
 .skills_list {
   row-gap: 1.8rem;
 }
@@ -535,11 +548,11 @@ input {
   border-radius: 0.25rem;
 }
 
-.skills_bar{
+.skills_bar {
   background-color: var(--box-color);
 }
 
-.skills_percentage{
+.skills_percentage {
   display: block;
   background-color: var(--skin-color);
 }

@@ -123,7 +123,7 @@ input {
 }
 
 /* =========== REUSABLE CSS CLASSES ======== */
-/* alterar a distancia das sections em cima */
+/* alterar a distancia das sections em cima original padding 6.5rem 0 2rem*/
 .section {
   padding: 3.5rem 0 2rem;
 }
@@ -153,7 +153,7 @@ input {
   position: absolute;
   left: 0;
   right: 0;
-  top: 1.2rem;
+  top: 1.2rem;  /* alterar distancia da logo original 1.8rem */
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -189,7 +189,7 @@ input {
   float: right;
   height: 100%;
   line-height: 100%;
-  padding: 0 0.8rem; /* alterar distancia do menu */
+  padding: 0 0.8rem; /* alterar distancia do menu original 1rem */
   color: var(--title-color);
   font-weight: var(--font-medium);
   position: relative;

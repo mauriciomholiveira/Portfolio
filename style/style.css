@@ -153,7 +153,7 @@ input {
   position: absolute;
   left: 0;
   right: 0;
-  top: 1.2rem;  /* alterar distancia da logo original 1.8rem */
+  top: 1.2rem; /* alterar distancia da logo original 1.8rem */
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -615,7 +615,7 @@ input {
   transition: 0.3s;
 }
 
-.work_button:hover .work_button-icon{
+.work_button:hover .work_button-icon {
   transform: translateX(0.25rem);
 }
 
@@ -623,6 +623,87 @@ input {
 .active-work {
   background-color: var(--skin-color);
   color: var(--title-color);
+}
+/* Portfolio Popup */
+.portfolio_popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.portfolio_popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.portfolio_popup-inner {
+  background-color: var(--box-color);
+  width: 900px;
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  position: relative;
+}
+
+.portfolio_popup-content {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.portfolio_popup-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--skin-color);
+  cursor: pointer;
+}
+
+.portfolio_popup-img {
+  border-radius: 0.5rem;
+}
+
+.portfolio_popup-subtitle {
+  font-size: var(--smaller-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.details_title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+}
+
+.details_description {
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-2);
+}
+
+.details_info li {
+  margin-bottom: var(--mb-0-75);
+  text-transform: capitalize;
+  font-size: var(--small-font-size);
+}
+
+.details_info li:last-child {
+  margin-bottom: 0;
+}
+.details_info li span {
+  font-weight: normal;
+}
+
+.details_info li a {
+  text-transform: lowercase;
+  color: var(--skin-color);
 }
 
 /* =========== About Section ======== */

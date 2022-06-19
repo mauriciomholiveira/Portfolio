@@ -60,7 +60,7 @@ function togglePortfolioPopup() {
 
 document.querySelector(".portfolio_popup-close").addEventListener("click", togglePortfolioPopup)
   function portfolioItemDetails (portfolioItem) {
-  document.querySelector(".pp_thumbnail img").src = portfolioItem.querySelector("")
+  document.querySelector(".pp_thumbnail img").src = portfolioItem.querySelector(".work_img").src;
   }
 /* =============== SERVICE MODAL ======================= */
 

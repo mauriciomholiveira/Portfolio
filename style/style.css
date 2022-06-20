@@ -512,9 +512,8 @@ input {
 }
 .skills_subtitle-info {
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.70rem;
   margin-bottom: var(--mb-3);
-margin-top: -3rem;
 }
 .skills_arrow {
   margin-left: auto;

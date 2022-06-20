@@ -66,5 +66,26 @@ document.querySelector(".portfolio_popup-close").addEventListener("click", toggl
 
   }
 /* =============== SERVICE MODAL ======================= */
+const modalViews  = document.querySelectorAll('.services_modal'),
+      modelBtns = document.querySelectorAll('.services_button'),
+      modalCloses = document.querySelectorAll('.services_modal-close')
 
+let modal = function(modalClick) {
+    modalViews[modalClick].classList.add('active-modal')
+}
+
+modelBtns.forEach((modelBtn, i) => {
+    modelBtn.addEventListener('click', () => {
+        modal(i)
+    })
+})
+
+
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener("click", () => {
+        modalViews.forEach((modalView) => {
+            modalView.classList.remove('active-modal')
+        })
+    })
+})
 /* =============== SWIPER TESTIMONIAL ======================= */

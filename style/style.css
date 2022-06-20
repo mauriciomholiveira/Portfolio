@@ -733,7 +733,7 @@ input {
   font-weight: var(--font-medium);
 }
 
-.services_butt on {
+.services_button {
   color: var(--skin-color);
   font-size: var(--small-font-size);
   display: flex;
@@ -829,7 +829,7 @@ input {
 
 /* =========== Testimonial Section ======== */
 
-/*  Swiper  Clss */
+/*  Swiper  Class */
 
 /* =========== Contact Section ======== */
 

@@ -510,7 +510,12 @@ input {
 .skills_subtitle {
   font-size: var(--small-font-size);
 }
-
+.skills_subtitle-info {
+  text-align: center;
+  font-size: 0.7rem;
+  margin-bottom: var(--mb-3);
+margin-top: -3rem;
+}
 .skills_arrow {
   margin-left: auto;
 }
@@ -768,7 +773,6 @@ input {
   transition: 0.3s;
 }
 
-
 .services_modal-content {
   width: 500px;
   position: relative;
@@ -816,13 +820,12 @@ input {
   font-size: 1.1rem;
 }
 
-.services_modal-info{
+.services_modal-info {
   font-size: var(--small-font-size);
 }
 
-
 /*  Active Modal */
-.active-modal{
+.active-modal {
   opacity: 1;
   visibility: visible;
 }

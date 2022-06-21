@@ -13,7 +13,7 @@
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- ====SWIPER CSS==== -->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./style/swiper-bundle.min.css">
 
   <!-- ====MAIN CSS==== -->
   <link rel="stylesheet" href="./style/style.css">
@@ -808,9 +808,11 @@
     <section class="testimonials section">
       <h2 data-heading="O que meus Clientes falam" class="section_title">Feedbacks</h2>
 
-      <div class="testimonials_container container">
-        <div>
-          <div class="testimonial_card">
+      <div class="testimonials_container container swiper">
+        <div class="swiper-wrapper">
+
+          <!-- FEEDBACK 1 -->
+          <div class="testimonial_card swiper-slide">
             <div class="testimonial_quote">
               <i class='bx bxs-quote-alt-left'></i>
             </div>
@@ -826,7 +828,44 @@
               </div>
             </div>
           </div>
+
+          <!-- FEEDBACK 2 -->
+          <div class="testimonial_card swiper-slide">
+            <div class="testimonial_quote">
+              <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <p class="testimonial_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+              voluptates expedita sit.</p>
+            <h3 class="testimonial_date">Março 27.2022</h3>
+            <div class="testimonial_profile">
+              <img src="./assets/testimonial2.jpg" alt="" class="testimonial_profile-img">
+
+              <div class="testimonial_profile-data">
+                <span class="testimonial_profile-name">Exemplo Speak</span>
+                <span class="testimonial_profile-detail">Cargo e Empresa</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FEEDBACK 3 -->
+          <div class="testimonial_card swiper-slide">
+            <div class="testimonial_quote">
+              <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <p class="testimonial_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+              voluptates expedita sit.</p>
+            <h3 class="testimonial_date">Março 27.2022</h3>
+            <div class="testimonial_profile">
+              <img src="./assets/testimonial3.webp" alt="" class="testimonial_profile-img">
+
+              <div class="testimonial_profile-data">
+                <span class="testimonial_profile-name">Exemplo Speak</span>
+                <span class="testimonial_profile-detail">Cargo e Empresa</span>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
 
     </section>
@@ -842,7 +881,7 @@
   <script src="./js/mixitup.min.js"></script>
 
   <!-- ====SWIPER JS==== -->
-  <script src=""></script>
+  <script src="./js/swiper-bundle.min.js"></script>
 
   <!-- ====MAIN JS==== -->
   <script src="./js/main.js"></script>

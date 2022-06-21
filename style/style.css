@@ -873,6 +873,11 @@ input {
   height: 60px;
   border-radius: 3rem;
 }
+.testimonial_profile-data{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
 .testimonial_profile-name {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
@@ -883,7 +888,13 @@ input {
   font-size: var(--small-font-size);
 }
 /*  Swiper  Class */
+.swiper-pagination-bullet {
+  background-color: var(--box-color);
+}
 
+.swiper-pagination-bullet-active {
+background-color: var(--skin-color);
+}
 /* =========== Contact Section ======== */
 
 /* =========== FOOTER ======== */

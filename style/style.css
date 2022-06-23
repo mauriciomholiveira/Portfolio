@@ -207,6 +207,31 @@ input {
 .social_share {
   font-size: 1.5rem;
 }
+
+.nav_toggle {
+  height: 32px;
+  width: 36px;
+  cursor: pointer;
+  position: fixed;
+  right: 1.5rem;
+  top: 2rem;
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+  background-color: var(--skin-color);
+  color: var(--title-color);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_close {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  cursor: pointer;
+  display: none;
+}
 /* Active Link */
 
 .nav_link.active-link,
@@ -1134,7 +1159,18 @@ textarea.input {
 }
 
 @media screen and (max-width: 1024px) {
-  .container{}
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+  .sidebar{
+    width: 100%;
+    z-index: 999;
+    transform: translateX(-100%);
+  } 
+  .main{
+    margin-left: 0;
+  }
 }
 
 /* For Medium Devices */

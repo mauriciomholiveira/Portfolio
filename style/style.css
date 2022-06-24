@@ -75,6 +75,7 @@ button,
 input {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+  
 }
 
 body {
@@ -93,6 +94,7 @@ ul {
   list-style: none;
 }
 a {
+  
   text-decoration: none;
 }
 
@@ -123,9 +125,9 @@ input {
 }
 
 /* =========== REUSABLE CSS CLASSES ======== */
-/* alterar a distancia das sections em cima original padding 6.5rem 0 2rem*/
+/* alterar a distancia das sections em cima original padding 6.5rem 0 2rem alterado para 3.5rem 0 2rem*/
 .section {
-  padding: 6.5rem 0 2rem;
+  padding: 3.5rem 0 2rem;
 }
 
 .section_title {
@@ -140,6 +142,10 @@ input {
   font-weight: var(--font-medium);
   color: var(--skin-color);
 }
+
+.uppercase{
+  text-transform: uppercase;
+}
 /* =========== SIDEBAR ======== */
 .sidebar {
   position: fixed;
@@ -147,13 +153,14 @@ input {
   height: 100vh;
   background-color: var(--body-color);
   border-right: 1px solid var(--box-color);
+  transition: 0.5s;
 }
 
 .nav_logo {
   position: absolute;
   left: 0;
   right: 0;
-  top: 1.8rem; /* alterar distancia da logo original 1.8rem e alterado é 1.2rem */
+  top: 1.2rem; /* alterar distancia da logo original 1.8rem e alterado é 1.2rem */
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -182,14 +189,14 @@ input {
 .nav_list {
   display: flex;
   flex-direction: row-reverse;
-  margin: -2px auto 0 auto; /* margin original -2px auto 0 auto, alterado so muda -2px para 2rem */
+  margin: 2.5rem auto 0 auto; /* margin original -2px auto 0 auto, alterado so muda -2px para 2.5rem */
 }
 
 .nav_link {
   float: right;
   height: 100%;
   line-height: 100%;
-  padding: 0 1rem; /* alterar distancia do menu original 1rem e alterado é 0.8rem*/
+  padding: 0 0.5rem; /* alterar distancia do menu original 1rem e alterado é 0.5rem*/
   color: var(--title-color);
   font-weight: var(--font-medium);
   position: relative;
@@ -1014,7 +1021,7 @@ textarea.input {
   font-size: 1rem;
   font-weight: var(--font-medium);
   pointer-events: none;
-  z-index: 1000;
+  z-index: 15;
   transition: 0.5s;
 }
 
@@ -1032,7 +1039,7 @@ textarea.input {
   font-size: var(--small-font-size);
   padding: 0 0.4rem;
   pointer-events: none;
-  z-index: 500;
+  z-index: var(--z-fixed);
 }
 
 .input_container span::before,

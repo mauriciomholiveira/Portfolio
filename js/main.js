@@ -1,11 +1,21 @@
 /* =============== SHOW SIDEBAR ======================= */
-
+const navMenu = document.getElementById('sidebar'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
 /* =============== SIDEBAR SHOW ======================= */
 /* Validação IF Constante Existente */
-
+if(navToggle){
+  navToggle.addEventListener("click",() =>{
+    navMenu.classList.add('show-sidebar')
+  })
+}
 /* =============== SIDEBAR HIDDEN ======================= */
 /* Validação IF Constante Existente */
-
+if(navClose){
+  navClose.addEventListener("click",() =>{
+    navMenu.classList.remove('show-sidebar')
+  })
+}
 /* =============== SKILLS TABS ======================= */
 const tabs = document.querySelectorAll('[data-target]'),
   tabContent = document.querySelectorAll('[data-content]')

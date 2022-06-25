@@ -937,7 +937,11 @@ input {
   justify-content: center;
   align-items: center;
 }
-
+.contact_subtitle-info{
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: var(--mb-3);
+}
 .contact_info {
   display: grid;
   row-gap: 1rem;

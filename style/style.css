@@ -1377,9 +1377,9 @@ textarea.input {
     left: 1.5rem;
   }
 
-  /* Coloca as seguintes propriedades para deixar a imagem alternativa ativada na home - background-image: cover; height: initial;  */
   .home {
-    width: 88%;
+    background-image: none;
+    height: initial;
     align-items: initial;
     padding: 7rem 0 2rem;
   }
@@ -1388,20 +1388,18 @@ textarea.input {
     row-gap: 2rem;
   }
 
-  /* COLOCAR IMAGEM ALTERNATIVA NA HOME */
-
-  /*  .home_img {
+  .home_img {
     display: block;
-    width: 250px;
-    width: 300px;
+    width: auto;
+    height: auto;
     justify-self: center;
     border: 1px inset #e1094a;
     border-radius: 4px;
-  } */
+  }
 
   .home_social {
     left: initial;
-    right: -5rem;
+    right: -1rem;
     flex-direction: column;
     row-gap: 3.5rem;
   }

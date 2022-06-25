@@ -75,7 +75,6 @@ button,
 input {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  
 }
 
 body {
@@ -94,7 +93,6 @@ ul {
   list-style: none;
 }
 a {
-  
   text-decoration: none;
 }
 
@@ -143,7 +141,7 @@ input {
   color: var(--skin-color);
 }
 
-.uppercase{
+.uppercase {
   text-transform: uppercase;
 }
 /* =========== SIDEBAR ======== */
@@ -937,7 +935,7 @@ input {
   justify-content: center;
   align-items: center;
 }
-.contact_subtitle-info{
+.contact_subtitle-info {
   text-align: center;
   font-size: 0.8rem;
   margin-bottom: var(--mb-3);
@@ -1379,9 +1377,9 @@ textarea.input {
     left: 1.5rem;
   }
 
+  /* Coloca as seguintes propriedades para deixar a imagem alternativa ativada na home - background-image: cover; height: initial;  */
   .home {
-    background-image: none;
-    height: initial;
+    width: 88%;
     align-items: initial;
     padding: 7rem 0 2rem;
   }
@@ -1390,15 +1388,20 @@ textarea.input {
     row-gap: 2rem;
   }
 
-  .home_img {
+  /* COLOCAR IMAGEM ALTERNATIVA NA HOME */
+
+  /*  .home_img {
     display: block;
     width: 250px;
+    width: 300px;
     justify-self: center;
-  }
+    border: 1px inset #e1094a;
+    border-radius: 4px;
+  } */
 
   .home_social {
     left: initial;
-    right: -1rem;
+    right: -5rem;
     flex-direction: column;
     row-gap: 3.5rem;
   }
